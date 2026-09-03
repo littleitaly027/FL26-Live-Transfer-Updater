@@ -3,6 +3,7 @@
 import logging
 import sys
 from pathlib import Path
+from typing import Optional
 import structlog
 
 
@@ -13,8 +14,6 @@ def configure_logging(log_level: str = "INFO", log_file: Optional[str] = None) -
         log_level: Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
         log_file: Optional file path for log output
     """
-    from typing import Optional
-    
     # Convert string to logging level
     numeric_level = getattr(logging, log_level.upper(), logging.INFO)
 
