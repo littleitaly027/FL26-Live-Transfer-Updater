@@ -1,0 +1,1 @@
+\"\"\"Transfer source adapters for external APIs.\"\"\"\n\nfrom fl26_updater.sources.base import BaseTransferSource\n\n__all__ = [\"BaseTransferSource\"]\n
